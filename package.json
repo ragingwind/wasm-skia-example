@@ -1,0 +1,25 @@
+{
+  "name": "wasm-skia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "clean": "rm -rf ./dist",
+    "build": "webpack ./src/index.js -o dist/index.js",
+    "example": "python3 -m http.server 8000"
+  },
+  "keywords": [],
+  "author": "@ragingwind",
+  "license": "MIT",
+  "dependencies": {
+    "canvaskit-wasm": "^0.17.3"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^6.1.0",
+    "html-webpack-plugin": "^4.4.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
